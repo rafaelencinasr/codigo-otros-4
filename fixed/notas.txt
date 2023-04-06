@@ -1,0 +1,18 @@
+Errores:
+- Falta el System.in en el Scanner
+- Falta importar java.util.Scanner
+- En el mensaje donde se pide la entrada del jugador 2 se vuelve a indicar al jugador 1
+- Se crea un segundo scanner en lugar de reutilizar el mismo scanner "s"
+- Comparar strings con == puede darnos problemas, mejor utilizar equals()
+- Faltan "breaks" dentro de los casos del switch
+- Falta valor default
+
+Soluciones:
+- Para esto se definio correctamente el scanner, se importó en la clase, y se elimino
+el segundo scanner s2 para la entrada del jugador 2
+- Se cambio el mensaje que se muestra al usuario para el segundo jugador
+- Para evitar problemas dentro del switch case, se agrego una comprobación para las entradas
+  de los jugadores, en caso de que se introduzcan inputs invalidos se muestra un mensaje
+  de error. 
+- Se cambio la comparacion de los strings por el uso del metodo equals()
+- Se agregaron los breaks a los cases
